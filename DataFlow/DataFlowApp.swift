@@ -11,7 +11,8 @@ import SwiftUI
 struct DataFlowApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            AccountView_Observing()
+                .environmentObject(Profile_Observable())
         }
     }
 }
